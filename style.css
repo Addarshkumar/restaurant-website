@@ -213,7 +213,7 @@ body{
     color: red;
 }
 
-@media screen and  (max-width:350px){
+@media screen and  (max-width:400px){
     #navbar{
         display: flex;
         justify-content: space-evenly;
