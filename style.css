@@ -1,0 +1,311 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+#container{
+    background-image: url("https://img.freepik.com/premium-photo/top-view-classic-spaghetti-pasta-with-tomato-sauce-dark-plate-copy-space_67155-5968.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696464000&semt=ais");
+    width: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    
+}
+
+#navbar{
+    color: red;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+#navbar p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 10%;
+}
+#navbar button{
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: coral;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#logo{
+    width: 120px;
+    height: 70px;
+}
+#texts{
+  margin-left: 10%;
+  line-height: 30px;
+}
+
+#texts p{
+    font-size: 20px;
+}
+
+#texts h2{
+    font-size: 40px;
+}
+#random-food-container{
+    width:100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+#random-food-image{
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid rgb(255, 153, 0);
+}
+
+.previewimage{
+    width: 300px;
+    margin-left: 50%;
+    margin-top: 15%;
+}
+
+
+::placeholder{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#fooditems{
+    margin-top: 10%;
+    margin-left: 10%;
+    /* margin-left: 25%; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    z-index: 0;
+
+}
+
+.image{
+    width: 200px;
+}
+
+#searchbox{
+    width: 30%;
+    margin-left: 30%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#submitBtn{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(255, 176, 6);
+    font-size: 20px;
+}
+
+#random-food-ingredients{
+    position: fixed;
+    top: 15%;
+    left: 18%;
+    width: 60%;
+    height: 80vh;
+    background-color: rgb(205, 162, 45);
+    margin: auto;
+    display: none;
+    z-index: 2;
+    color: black;
+    font-size: 20px;
+    padding-left: 5%;
+    line-height: 30px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    
+}
+.ingredient-list{
+    position: absolute;
+    bottom: 25%;
+    font-weight: 800;
+}
+
+#submitBtn:hover{
+    background-color: rgb(204, 146, 20);
+
+}
+
+.nameoffood{
+    color: white;
+}
+
+.cont{
+    width: 200px;
+    border: 3px solid rgb(155, 155, 155);
+}
+
+.popup{
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    position: absolute;
+    position: fixed;
+    /* margin-left: 25%; */
+   
+
+}
+.ingredient-lists{
+    position: relative;
+    bottom: 53%;
+    padding-left: 5%;
+    line-height: 30px;
+    font-weight: 800;
+}
+
+#ingredients_div {
+    width: 50%;
+    height: 100vh;
+    margin-left: 20%;
+    display: none;
+    position: fixed;
+    top: 50px;
+    color: black;
+    font-size: 20px;
+    /* border: 3px solid yellow; */
+}
+.popupimage{
+    width: 300px;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+/* #search-div{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+} */
+
+#ingredientContainer{
+    width: 60%;
+    height: 50vh;
+    background-color: white;
+    /* display: none; */
+}
+
+.cutbutton{
+    width: 40px;
+    position: absolute;
+    right: 0%;
+}
+
+.ingredientName{
+    color: red;
+}
+
+@media screen and  (max-width:350px){
+    #navbar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #navbar p{
+        font-size: 10px;
+    }
+    #logo{
+        height: 40px;
+    }
+    #navbar button{
+       height: 40px;
+       width: 50px;
+       font-size: 12px;
+    }
+    #searchbox{
+        margin-top: 5%;
+        width: 250px;
+        margin-left: 10%;
+        
+    }
+    #submitBtn{
+        height: 40px;
+        margin-left: 35%;
+        margin-top: 10px;
+    }
+      
+    #container{
+        background-size:contain;
+    }
+
+    #fooditems{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 0;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .cont{
+     width: 150px;
+    }
+    .image{
+        width: 150px;
+        height: 80px;
+    }
+    #random-food-image{
+        height: 150px;
+        width: 150px;
+    }
+
+    #texts p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    #texts h2{
+        line-height: 20px;
+        font-size: 25px;
+    }
+
+    #random-food-ingredients{
+        height: 60vh;
+        width: 80%;
+        
+    }
+
+    .previewimage{
+        height: 100px;
+        width: 100px;
+    }
+
+    .ingredient-list{
+        font-size: 15px;
+    }
+
+    .popup{
+        margin-top: 50px;
+        width: 250px;
+        height: 70vh;
+    }
+    .ingredient-lists{
+        font-size: 12px;
+        position: relative;
+        bottom: 30%;
+        width: 200px;
+    }
+    .popupimage{
+        width: 100px;
+        height: 100px;
+    }
+    .cutbutton{
+        width: 25px;
+    }
+
+
+}
