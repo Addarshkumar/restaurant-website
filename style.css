@@ -170,8 +170,8 @@ body{
 }
 
 .popup{
-    width: 60%;
-    height: 100vh;
+    width: 50%;
+    height: 80vh;
     background-color: white;
     color: black;
     position: absolute;
@@ -183,7 +183,7 @@ body{
 }
 .ingredient-lists{
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     font-weight: 800;
 }
 
@@ -203,12 +203,7 @@ body{
     margin-top: 10%;
     margin-left: 50%;
 }
-/* #search-div{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
 
-} */
 
 #ingredientContainer{
     width: 60%;
@@ -329,6 +324,7 @@ align-items: center;
     .ingredient-list{
         font-size: 15px;
         line-height: 20px;
+        padding-left: 3%;
     }
 
     .popup{
@@ -338,6 +334,7 @@ align-items: center;
         height: 70vh;
     }
     .ingredient-lists{
+        padding-left: 3%;
         font-size: 12px;
         position: relative;
         bottom: 20%;

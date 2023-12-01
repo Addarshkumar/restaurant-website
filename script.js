@@ -114,7 +114,7 @@ async function getSearchedFood() {
                 .then((res)=>res.json()).then((data)=>{
                    let ingredients=data.meals[0]
                    const ingredientLists = document.createElement("ol");
-                   ingredientLists.setAttribute("class","ingredient-lists")
+                   ingredientLists.setAttribute("class","ingredient-lists");
                 //    console.log(ingredients)
                 for(let i=1;i<=20;i++){
                     let ingredient=ingredients[`strIngredient${i}`]
