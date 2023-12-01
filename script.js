@@ -24,6 +24,7 @@ async function getRandomFood() {
 
         let ingredientsItem = data.meals[0];
         container.onclick = () => {
+            document.getElementById("mymodal").style.display="flex"
             document.body.style.backgroundColor="black"
             const ingredientList = document.createElement("ol");
             ingredientList.setAttribute("class","ingredient-list")
@@ -53,7 +54,7 @@ async function getRandomFood() {
             ingredientContainer.appendChild(ingredientList);
             ingredientContainer.style.display="block"
             crossButton.onclick=()=>{
-                console.log("hi")
+                document.getElementById("mymodal").style.display="none"
                 document.body.style.backgroundColor="black"
                 ingredientContainer.style.display="none"
                 ingredientContainer.innerText="";
@@ -115,7 +116,7 @@ async function getSearchedFood() {
                 for(let i=1;i<=20;i++){
                     let ingredient=ingredients[`strIngredient${i}`]
                     let amount=ingredients[`strMeasure${i}`]
-                    if (ingredient) {
+                    if (ingredient && amount) {
                         const listItem = document.createElement("li");
                         listItem.textContent = ` ${ingredient} : ${amount}`;
     
