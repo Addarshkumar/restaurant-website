@@ -41,11 +41,13 @@ body{
     border-bottom: 2px solid white;
 }
 
-#navbar p{
+#navbar a{
     margin-top: 20px;
     font-size: 20px;
     font-weight: 800;
     margin-right: 10%;
+    text-decoration: none;
+    color: red;
 }
 #navbar button{
     width: 120px;
@@ -226,13 +228,41 @@ body{
     color: red;
 }
 
+#footer{
+background-color: coral;
+display: flex;
+height: 100px;
+justify-content: space-evenly;
+font-size: 20px;
+margin-top: 30px;
+align-items: center;
+}
+#social-media{
+    display: flex;
+}
+#social-media img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#error-message{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+    text-align: center;
+}
+
 @media screen and  (max-width:400px){
     #navbar{
         display: flex;
         justify-content: space-evenly;
     }
-    #navbar p{
+    #navbar a{
         font-size: 10px;
+        text-decoration: none;
+        color: red;
     }
     #logo{
         height: 40px;
@@ -261,7 +291,7 @@ body{
     #fooditems{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        margin-left: 0;
+        margin-left: 10px;
         row-gap: 10px;
         column-gap: 10px;
     }
@@ -290,6 +320,7 @@ body{
         height: 60vh;
         width: 80%;
         
+        
     }
 
     .previewimage{
@@ -299,17 +330,19 @@ body{
 
     .ingredient-list{
         font-size: 15px;
+        line-height: 20px;
     }
 
     .popup{
         margin-top: 50px;
+        margin-right: 50px;
         width: 250px;
         height: 70vh;
     }
     .ingredient-lists{
         font-size: 12px;
         position: relative;
-        bottom: 30%;
+        bottom: 20%;
         width: 200px;
     }
     .popupimage{
@@ -319,6 +352,15 @@ body{
     .cutbutton{
         width: 25px;
     }
-
+    
+    #footer{
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #footer img{
+      width: 30px;
+    }
 
 }

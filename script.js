@@ -4,7 +4,8 @@ let result = document.getElementById("fooditems");
 let searchBox = document.getElementById("searchbox");
 let ingredientsBox = document.getElementById("ingredients_div");
 let ingredientContainer=document.getElementById("random-food-ingredients")
-// let crossButton=document.querySelector(".cutbutton");
+
+
 
 let randomUrl = "https://www.themealdb.com/api/json/v1/1/random.php";
 
@@ -89,6 +90,7 @@ async function getSearchedFood() {
 
             div.addEventListener("click", getPopUp);
             function getPopUp(){
+                document.getElementById("mymodal").style.display="flex"
                 let popUpDiv = document.createElement("div");
                 popUpDiv.setAttribute("class", "popup");
 
@@ -106,7 +108,7 @@ async function getSearchedFood() {
                 popUpDiv.innerHTML="";
 
                 let ingredientsItem=item.idMeal;
-                console.log(ingredientsItem)
+                // console.log(ingredientsItem)
                 fetch(` https://www.themealdb.com/api/json/v1/1/lookup.php?i=${ingredientsItem}`)
                 .then((res)=>res.json()).then((data)=>{
                    let ingredients=data.meals[0]
@@ -140,6 +142,7 @@ async function getSearchedFood() {
                 result.appendChild(ingredientsBox)
                 ingredientsBox.style.display = "block";
                 cutButton.onclick=()=>{
+                    document.getElementById("mymodal").style.display="none"
                     ingredientsBox.style.display="none";
                     
                 }
@@ -154,6 +157,7 @@ async function getSearchedFood() {
             });
     } catch (error) {
         console.error("Error", error);
+        document.getElementById("message").innerHTML="Sorry , no results found"
     }
 }
 
