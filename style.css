@@ -181,10 +181,8 @@ body{
 
 }
 .ingredient-lists{
-    position: relative;
-    bottom: 53%;
-    /* padding-left: 3%; */
-    line-height: 30px;
+    position: absolute;
+    bottom: 30%;
     font-weight: 800;
 }
 
