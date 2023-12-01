@@ -155,20 +155,21 @@ body{
 }
 
 .popup{
-    width: 50%;
+    width: 60%;
     height: 100vh;
     background-color: white;
     color: black;
     position: absolute;
     position: fixed;
     /* margin-left: 25%; */
+    padding-left: 3%;
    
 
 }
 .ingredient-lists{
     position: relative;
     bottom: 53%;
-    padding-left: 5%;
+    /* padding-left: 3%; */
     line-height: 30px;
     font-weight: 800;
 }
