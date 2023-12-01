@@ -161,7 +161,12 @@ async function getSearchedFood() {
     }
 }
 
-button.addEventListener("click", getSearchedFood);
+
+button.addEventListener("click", function(){
+    getSearchedFood()
+    result.scrollIntoView({behavior:"smooth"})
+
+});
 
 
 

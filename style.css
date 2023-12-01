@@ -30,7 +30,6 @@ body{
 
 
 #navbar{
-    color: red;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -47,7 +46,7 @@ body{
     font-weight: 800;
     margin-right: 10%;
     text-decoration: none;
-    color: red;
+    color: rgba(0, 255, 221, 0.849);
 }
 #navbar button{
     width: 120px;
