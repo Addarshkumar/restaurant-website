@@ -318,9 +318,8 @@ align-items: center;
     #random-food-ingredients{
         height: 60vh;
         width: 80%;
-        
-        
-    }
+        margin-left: -30px;
+     }
 
     .previewimage{
         height: 100px;

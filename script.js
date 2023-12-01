@@ -71,6 +71,7 @@ getRandomFood()
 
 async function getSearchedFood() {
     try {
+        document.getElementById("message").innerHTML="";
         let inputValue = searchBox.value;
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${inputValue}`);
         const responseData = await response.json();
